@@ -9,12 +9,17 @@ body {
     color:white;
 }
 
-section.quote {
-    background-color:#E5E7EB
+main {
+    margin:0;
+    padding:0;
+}
+
+#cta, #quote, #infos {
+    padding:64px 0;
 }
 
 header {
-    padding:16px;
+    padding:16px 40px;
     margin:0;
     display:flex;
     align-items: center;
@@ -27,30 +32,41 @@ header h1 {
     color:#F9FAF8;
 }
 
-ul {
+header ul {
     list-style: none;
+    display: flex;
+    gap:8px;
 }
 
-main {
-    margin:0;
-    padding:0;
+header a {
+    color:white;
+    text-decoration: none;
 }
+
+/* Feature section */
 
 #feature {
     display: flex;
-    padding:16px;
+    padding:80px 40px;
     justify-content: center;
+    gap:40px;
 }
 
 #feature h2 {
     font-size:48px;
     color:#F9FAF8;
     font-weight: 900;
+    margin:0;
+    padding:0;
+    margin-bottom: 16px;
 }
 
 #feature p {
     font-size:18px;
     color:#E5E7EB;
+    margin:0;
+    padding:0;
+    margin-bottom: 16px;
 }
 
 #feature button {
@@ -59,7 +75,138 @@ main {
     appearance: none;
     color:white;
     margin:0;
-    padding:8px;
-    font-weight:bold;
+    padding:8px 16px;
+    font-weight:normal;
     border-radius:4px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* Informations section */
+
+#infos {
+    text-align: center;
+    padding:16px 40px;
+}
+
+#infos h3 {
+    font-size:36px;
+    color:#1F2937;
+    font-weight:bold;
+    padding:0;
+    margin: 0 0 1.5em 0;
+}
+
+#infos .items-list {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    gap:36px;
+}
+
+#infos .item {
+    max-width: 200px;
+}
+
+#infos .item img {
+    border:3px #3882F6 solid;
+    border-radius:8px;
+}
+
+/* Quote section */
+
+#quote {
+    background-color:#E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote q {
+    font-size:36px;
+    color:#1F2937;
+    font-style: italic;
+    max-width: 800px;
+    font-weight:100;
+    display: block;
+    width:80%;
+}
+
+#quote cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    font-weight:900;
+    width:80%;
+    color:#1F2937;
+}
+
+/* CTA section */
+
+#cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:64px 40px;
+}
+
+#cta-block {
+    background-color: #3882F6;
+    color:white;
+    padding:16px;
+    width: 80%;
+    border-radius: 8px;
+    gap:16px;
+}
+
+#cta-block .wrapper {
+   display: flex;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:18px 80px;
+}
+
+#cta-block h3 {
+    padding:0;
+    margin:0;
+    margin-bottom: 0.5em;
+}
+
+#cta-block p {
+    margin:0;
+    padding:0;
+    font-weight:300;
+}
+
+#cta-block button {
+    background-color:transparent;
+    border:none;
+    appearance: none;
+    color:white;
+    border:3px white solid;
+    border-radius: 8px;
+    min-width: 150px;
+    margin:0;
+    padding:8px;
+    font-weight:500;
+    border-radius:4px;   
+    height:auto;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#cta-block button:hover {
+    background-color:white;
+    color:#3882F6;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1F2937;
+    color:white;
+    text-align:center;
+    padding:32px 0;
 }
